@@ -1,0 +1,50 @@
+// Folha de contato: papel fotográfico, base do filme, impressão de borda âmbar e lápis dermatográfico.
+// No escuro vira negativo, e o lápis fica branco, como sobre negativo.
+:root {
+  color-scheme: light dark;
+  --paper: #eef0ec;
+  --film: #1f2321;
+  --amber: #e5a43a;
+  --pencil: #d3262b;
+  --ink: #171a19;
+  --muted: #5f6662;
+  --line: #d8dcd6;
+  --hover: #e4e7e2;
+  --note: #e3e6e0;
+  --action: var(--film);
+  --on-action: var(--paper);
+  --rail: 46px;
+  --font-ui: 'Schibsted Grotesk Variable', system-ui, sans-serif;
+  --font-frame: 'Big Shoulders Text Variable', 'Schibsted Grotesk Variable', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #151817;
+    --film: #3a403c;
+    --pencil: #f1f2ee;
+    --ink: #edefea;
+    --muted: #9aa39d;
+    --line: #2a2f2c;
+    --hover: #1d211f;
+    --note: #202522;
+    --action: var(--ink);
+    --on-action: var(--paper);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  font-size: 15px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}

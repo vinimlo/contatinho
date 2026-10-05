@@ -1,0 +1,38 @@
+{
+  "name": "contatinho",
+  "version": "0.1.0",
+  "description": "A contact sheet of the people you follow who don't follow you back. Chrome extension, read-only.",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vinimlo/contatinho.git"
+  },
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest run",
+    "check": "svelte-check --tsconfig ./tsconfig.json --fail-on-warnings",
+    "icons": "node scripts/icons.mjs"
+  },
+  "dependencies": {
+    "svelte": "5.53.3"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "2.3.0",
+    "@fontsource-variable/big-shoulders-text": "5.3.0",
+    "@fontsource-variable/schibsted-grotesk": "5.3.0",
+    "@sveltejs/vite-plugin-svelte": "4.0.4",
+    "@testing-library/jest-dom": "6.9.1",
+    "@testing-library/svelte": "5.3.1",
+    "@types/chrome": "0.1.37",
+    "jsdom": "26.1.0",
+    "open-props": "1.7.23",
+    "sass": "1.105.1",
+    "sharp": "0.35.5",
+    "svelte-check": "4.4.3",
+    "typescript": "5.9.3",
+    "vite": "5.4.21",
+    "vitest": "3.2.4"
+  }
+}
